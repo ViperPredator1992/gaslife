@@ -69,6 +69,14 @@
                         right: -80px   
 @media (max-width: 1030px)
     .section
+        &-top
+            &__title
+                font-size: 30px
+                line-height: normal
+                max-width: 520px
+            &__text
+                font-size: 14px
+                line-height: normal    
         &-bottom
             &-block
                 &:nth-child(2)
@@ -77,15 +85,72 @@
                     &::after
                         right: -70px
     .header
+        & .container
+            padding-top: 16px
+            align-items: end
         &-left
             &__logo
+                padding-top: 0
                 & img
                     width: 120px
         &-right
             &__phone
                 font-size: 22px
-        __link-call                                                   
+                line-height: normal
+                margin-bottom: 20px
+            &__link
+                &-call
+                    display: none                                                   
+@media (max-width: 992px)
+    .section
+        &-bottom
+            &__title
+                text-align: center
+            &-block
+                &:nth-child(2)
+                    &::before,
+                    &::after
+                        display: none
+                &s
+                    flex-direction: column        
+        &-top
+            &__link
+                &-subtitle
+                    margin-bottom: 50px
+@media (max-width: 768px)
+    .header
+        &-left
+            &-list
+                margin: 10px 0 0
+                max-width: 180px
+                &__item
+                    margin-bottom: 10px
+        &-right
+            &-list
+                &__item
+                    margin-bottom: 10px
+    .section
+        &-top
+            &__title
+                margin: 25px auto 15px
+                font-size: 24px
+                max-width: 420px
+            &__link
+                height: 53px
+                font-size: 18px                                                         
+@media (max-width: 600px)
+    .section
+        &-top
+            &__text
+                text-align: left
+    .header
+        &-right
+            &-list
+                max-width: 166px 
+@media (max-width: 520px)
     
+
+
     
 @media (max-width: 425px)
     .section-hide
