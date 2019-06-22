@@ -543,7 +543,8 @@ a {
   font-weight: bold;
   font-size: 48px;
   position: absolute;
-  top: 0;
+  top: 25px;
+  left: -130px;
 }
 
 .section-bottom-block:nth-child(2)::after {
@@ -552,7 +553,8 @@ a {
   font-weight: bold;
   font-size: 48px;
   position: absolute;
-  top: 0;
+  top: 25px;
+  right: -130px;
 }
 
 .section-bottom-block:last-child .section-bottom-block__text {
@@ -581,5 +583,17 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.footer {
+  padding: 25px 0 10px;
+}
+
+.footer__text {
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 0 7px;
 }
 /*# sourceMappingURL=style.css.map */
