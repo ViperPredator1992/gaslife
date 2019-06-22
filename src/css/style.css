@@ -341,14 +341,36 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'Noto Sans';
+  font-display: swap;
+  src: url("../fonts/NotoSans.eot");
+  src: local("Noto Sans"), local("NotoSans"), url("../fonts/NotoSans.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSans.woff2") format("woff2"), url("../fonts/NotoSans.woff") format("woff"), url("../fonts/NotoSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-display: swap;
+  src: url("../fonts/NotoSans-Bold.eot");
+  src: local("Noto Sans Bold"), local("NotoSans-Bold"), url("../fonts/NotoSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSans-Bold.woff2") format("woff2"), url("../fonts/NotoSans-Bold.woff") format("woff"), url("../fonts/NotoSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none;
 }
 
 body {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.25)), to(rgba(196, 196, 196, 0)));
   background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.25) 0%, rgba(196, 196, 196, 0) 100%);
   background: -o-linear-gradient(left, rgba(0, 0, 0, 0.25) 0%, rgba(196, 196, 196, 0) 100%);
@@ -360,5 +382,47 @@ body {
   max-width: 1390px;
   margin: auto;
   padding: 0 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-left__logo {
+  display: block;
+}
+
+.header-left-list {
+  padding: 0;
+  margin: 0 0 0 20px;
+  list-style: none;
+}
+
+.header-left-list__item {
+  line-height: 19px;
+  color: #ffffff;
+  margin-bottom: 7px;
+}
+
+.header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-right-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header-right-list__item {
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=style.css.map */
