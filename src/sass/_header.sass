@@ -1,8 +1,12 @@
 .header
+    & .container
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        min-height: 140px
     &-left
         display: flex
-        &__logo
-            display: block
         &-list
             padding: 0
             margin: 0 0 0 20px
@@ -13,9 +17,23 @@
                 margin-bottom: 7px   
     &-right
         display: flex
+        &-wrapper
+            &:first-child
+                margin-right: 37px
         &-list
             padding: 0
             margin: 0
             list-style: none
             &__item
-                margin-bottom: 5px         
+                margin-bottom: 5px
+                text-align: right
+                color: $white
+        &__link
+            &-drive
+                margin-top: 5px
+        &__phone
+            text-align: right
+            color: $white
+            font-weight: bold
+            line-height: 49px
+            font-size: 36px                         

@@ -388,14 +388,39 @@ img {
   max-width: 100%;
 }
 
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.header-link {
+  font-size: 18px;
+  line-height: 25px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #F8E623;
+  text-align: right;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 140px;
+}
+
 .header-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.header-left__logo {
-  display: block;
 }
 
 .header-left-list {
@@ -416,6 +441,10 @@ img {
   display: flex;
 }
 
+.header-right-wrapper:first-child {
+  margin-right: 37px;
+}
+
 .header-right-list {
   padding: 0;
   margin: 0;
@@ -424,5 +453,63 @@ img {
 
 .header-right-list__item {
   margin-bottom: 5px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.header-right__link-drive {
+  margin-top: 5px;
+}
+
+.header-right__phone {
+  text-align: right;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 49px;
+  font-size: 36px;
+}
+
+.section__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 65px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 900px;
+  margin: 15px auto 30px;
+}
+
+.section__text {
+  margin: 0 0 5px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.section__link {
+  font-weight: bold;
+  width: 210px;
+  height: 70px;
+  background-color: #F8E623;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  margin: 35px auto 15px;
+  color: #000000;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__link-subtitle {
+  text-align: center;
+  opacity: .5;
 }
 /*# sourceMappingURL=style.css.map */
