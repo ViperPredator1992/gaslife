@@ -371,11 +371,37 @@ body {
   font-family: 'Noto Sans', sans-serif;
   font-weight: normal;
   font-size: 14px;
+  background-color: #278AE8;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper::before {
+  content: '';
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.25)), to(rgba(196, 196, 196, 0)));
   background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.25) 0%, rgba(196, 196, 196, 0) 100%);
   background: -o-linear-gradient(left, rgba(0, 0, 0, 0.25) 0%, rgba(196, 196, 196, 0) 100%);
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, rgba(196, 196, 196, 0) 100%);
-  background-color: #278AE8;
+}
+
+.wrapper::after {
+  content: '';
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.25)), to(rgba(196, 196, 196, 0)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.25) 0%, rgba(196, 196, 196, 0) 100%);
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.25) 0%, rgba(196, 196, 196, 0) 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, rgba(196, 196, 196, 0) 100%);
 }
 
 .container {
@@ -585,6 +611,40 @@ a {
           justify-content: space-between;
 }
 
+.section-hide {
+  display: none;
+}
+
+.section-hide__title {
+  text-align: center;
+  margin: 20px 0 30px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+}
+
+.section-hide__link {
+  color: #000000;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  background-color: #F8E623;
+  width: 166px;
+  height: 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 50px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .footer {
   padding: 25px 0 10px;
 }
@@ -595,5 +655,11 @@ a {
   font-size: 12px;
   line-height: 16px;
   margin: 0 0 7px;
+}
+
+@media (max-width: 425px) {
+  .section-hide {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
